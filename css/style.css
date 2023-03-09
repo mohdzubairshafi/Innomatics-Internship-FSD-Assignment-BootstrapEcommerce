@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#Hero {
+  border: 2px solid black;
+  background: url(/assets/hero.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+#Hero > * {
+  position: relative;
+  z-index: 10;
+}
+#Hero::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.checked {
+  color: orange;
+}
+.item-img {
+  max-width: 250px;
+}
